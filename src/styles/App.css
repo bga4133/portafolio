@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 9vh;
+}
+.row-header1 {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row-header1 ul {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  font-size: 18px;
+}
+.row-header2 {
+  width: 60%;
+  height: 100%;
+}
+/* firts page */
+section {
+  background: white;
+  width: 100%;
+  height: 91vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-firtsPage {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row1-containerFirts {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.container-Information {
+  width: 80%;
+  padding: 10%;
+  height: auto;
+}
+.container-imgInfo {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-Information h1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+.container-Information h1 strong {
+  color: red;
+}
+.container-Information hr {
+  width: 25%;
+  height: 3px;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.description-information {
+  width: 60%;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.social-networks {
+  width: 80%;
+  margin-bottom: 20px;
+}
+.father-social-links {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.contact-buttons {
+  width: 80%;
+  margin-bottom: 20px;
+}
