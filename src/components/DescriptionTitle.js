@@ -1,8 +1,15 @@
 import React from "react";
+import { isMobile } from "mobile-device-detect";
 
 export const DescriptionTitle = () => {
   return (
-    <section className="description-title-section">
+    <section
+      className={
+        !isMobile
+          ? "description-title-section"
+          : "description-title-sectionResponsive"
+      }
+    >
       <div className="inside-section-description">
         <div className="container-forms-description flex">
           <div className="triangle animation"></div>

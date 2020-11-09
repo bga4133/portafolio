@@ -1,12 +1,27 @@
 import React from "react";
 import { ReactComponent as ImgFirts } from "../assets/img/undraw_startup_life_2du2.svg";
+import { isMobile } from "mobile-device-detect";
 
 export const FirtsContainer = () => {
   return (
-    <section>
-      <div className="container-firtsPage">
-        <div className="row1-containerFirts">
-          <div className="container-Information">
+    <section className={!isMobile ? null : "sectionResponsive"}>
+      <div
+        className={
+          !isMobile ? "container-firtsPage" : "container-firtsPageResposive"
+        }
+      >
+        <div
+          className={
+            !isMobile ? "row1-containerFirts" : "row1-containerFirtsResponsive"
+          }
+        >
+          <div
+            className={
+              !isMobile
+                ? "container-Information"
+                : "container-InformationResponsive"
+            }
+          >
             <h1>
               Hey I'm,<br></br>
               <strong> Brayan Garcia</strong>
@@ -20,7 +35,11 @@ export const FirtsContainer = () => {
                 </strong>
               </h3>
             </div>
-            <div className="social-networks">
+            <div
+              className={
+                !isMobile ? "social-networks" : "social-networksResponsive"
+              }
+            >
               <p>Social networks</p>
               <div className="father-social-links">
                 <img
@@ -40,7 +59,7 @@ export const FirtsContainer = () => {
           </div>
         </div>
         <div className="container-imgInfo">
-          <ImgFirts className="svg-imgFirts animation" />
+          {!isMobile ? <ImgFirts className="svg-imgFirts animation" /> : null}
         </div>
       </div>
     </section>
