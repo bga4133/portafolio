@@ -1,7 +1,7 @@
 import React from "react";
 import { ReactComponent as ImgFirts } from "../assets/img/undraw_code_review_l1q9.svg";
 import { isMobile } from "mobile-device-detect";
-
+import { motion } from "framer-motion";
 export const ContactMe = () => {
   return (
     <section
@@ -16,15 +16,17 @@ export const ContactMe = () => {
             : "container-contactMeResponsive flex"
         }
       >
-        <div
+        <motion.div
           className={
             !isMobile
               ? "father-img-contactMe flex"
               : "father-img-contactMeResponsive flex"
           }
+          animate={{ x: 10 }}
+          transition={{ ease: "easeOut", duration: 2 }}
         >
           <ImgFirts className="animation" />
-        </div>
+        </motion.div>
         <div
           className={
             !isMobile
