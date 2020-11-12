@@ -76,13 +76,12 @@ export const DescriptionTitle = () => {
             <div className="diamond animation"></div>
           </motion.div>
           <motion.div variants={fadeInUp}>
-            <h2>These are some projects</h2>
+            <h2>These are some of my projects</h2>
           </motion.div>
           <p>
-            s simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the industry's standard dummy text ever since the
-            1500s, when an unknown printer took a galley of type and scrambled
-            it to make a type specimen book. It has
+            Here you can see some of my projects, I really like javascript and
+            its React Vue frameworks, also nodejs, I have experience as a react
+            developer and vue developer, I like rxjs typescript and many more
           </p>
         </motion.div>
       )}

@@ -188,7 +188,8 @@ section {
   flex-direction: column;
   text-align: center;
 }
-.inside-section-description h2 {
+.inside-section-description h2,
+.text-thanks-row h2 {
   font-size: 30px;
   margin-bottom: 10px;
 }
@@ -250,6 +251,7 @@ section {
   background-color: white;
   flex-direction: column;
   margin: 15px;
+  padding: 20px;
   border-radius: 7px;
 }
 .description-father-project {
@@ -259,7 +261,7 @@ section {
 .button-viewProject {
   background: #a25ffe;
   height: 7vh;
-  width: 45%;
+  width: 50%;
   margin-top: 20px;
   color: white;
   border-radius: 20px;
@@ -408,14 +410,19 @@ section {
   margin-bottom: 6%;
 }
 .container-thanks {
-  width: 70%;
+  width: 90%;
 }
 .text-thanks-row {
   width: 60%;
+  padding-right: 120px;
   height: auto;
 }
 .img-thanks-row {
-  width: 10%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-top: 20px;
   justify-content: center;
   align-items: flex-start;
 }
@@ -595,4 +602,54 @@ footer {
   margin-bottom: 8px;
   padding: 24px;
   text-align: center;
+}
+/* skeleton */
+.skeleton {
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+}
+.skeleton-menu {
+  background: white;
+  height: 10vh;
+  padding-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.skeleton-father-div {
+  width: 10%;
+  height: 10vh;
+}
+.father-description-title {
+  width: 100%;
+  height: 90vh;
+}
+.container-skeleton,
+.second-container-skeleton {
+  width: 40%;
+  height: 70vh;
+  justify-content: center;
+  align-items: flex-start;
+}
+.father-description-titleResponsive div {
+  padding-top: 10px;
+  width: 90%;
+}
+.container-skeleton {
+  flex-direction: column;
+  justify-content: space-around;
+}
+.second-container-skeleton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttons-skeleton {
+  width: 60%;
+  justify-content: space-between;
+}
+.social-skeleton {
+  width: 24%;
+  justify-content: space-between;
 }

@@ -101,8 +101,8 @@ export const FirtsContainer = () => {
                     <motion.div variants={fadeInUp}>
                       <h3>
                         <strong>
-                          I'm Frontend developer (React, Vue) developer with
-                          crazy for mobile & web desing.
+                          I'm Frontend developer (React, Vue) developer, I like
+                          javascript and I live in Madrid Spain.
                         </strong>
                       </h3>
                     </motion.div>

@@ -74,35 +74,35 @@ export const Skills = () => {
           }
         >
           {inViewport && (
-            <div className="row1-skills flex">
+            <motion.div
+              className="row1-skills flex"
+              variants={fadeInContainerWithStagger}
+              initial="hidden"
+              animate="visible"
+            >
               <motion.div
-                variants={fadeInContainerWithStagger}
-                initial="hidden"
-                animate="visible"
+                className="separator-figures flex"
+                variants={fadeInUp}
               >
-                <motion.div
-                  className="separator-figures flex"
-                  variants={fadeInUp}
-                >
-                  <div className="triangle animation"></div>
-                  <div className="circle animation"></div>
-                  <div className="diamond animation"></div>
-                </motion.div>
-                <div>
-                  <motion.div variants={fadeInUp}>
-                    <h2>Some about my skills</h2>
-                  </motion.div>
-                  <motion.div variants={fadeInUp}>
-                    <p>
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Animi quo adipisci, pariatur voluptas magnam id odit
-                      quibusdam quam harum voluptates earum distinctio voluptate
-                      quod dolorum reiciendis illo, et itaque temporibus.
-                    </p>
-                  </motion.div>
-                </div>
+                <div className="triangle animation"></div>
+                <div className="circle animation"></div>
+                <div className="diamond animation"></div>
               </motion.div>
-            </div>
+              <div>
+                <motion.div variants={fadeInUp}>
+                  <h2>Some about my skills</h2>
+                </motion.div>
+                <motion.div variants={fadeInUp}>
+                  <p>
+                    Hey, I have 2 years and some months of experience as a
+                    frontend developer (React and vue) in these times and
+                    developed different skills such as: JavaScript, es7, React,
+                    Vue, RxJs, TypeScript, Nodejs, Express, Sass, Html 5, Css3,
+                    Grid , Hooks, Redux
+                  </p>
+                </motion.div>
+              </div>
+            </motion.div>
           )}
           {!isMobile ? (
             <div className="row2-skills flex">

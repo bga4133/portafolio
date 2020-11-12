@@ -37,7 +37,8 @@ export const ContactMe = () => {
           <form action="" className="flex">
             <h2>Send me a message</h2>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
+              If you are interested in contacting me send me a message and we
+              can talk!
             </p>
             <div className="father-input-contactMe flex">
               <input type="text" placeholder="Send me a message" />

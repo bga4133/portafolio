@@ -77,14 +77,12 @@ export const Thanks = () => {
                 <div className="diamond animation"></div>
               </motion.div>
               <motion.div variants={fadeInUp}>
-                <h2>Thanks for some</h2>
+                <h2>Thanks u!</h2>
               </motion.div>
               <motion.div variants={fadeInUp}>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad,
-                  dicta! Officia, provident! Laborum, doloremque. Harum, ipsa
-                  consequatur! Ratione corrupti illo fugit provident incidunt
-                  sit harum neque veritatis. Officiis, debitis illum?
+                  Thank you very much for viewing my portfolio and I hope you
+                  have a great day.
                 </p>
               </motion.div>
             </motion.div>
