@@ -21,8 +21,14 @@ header {
   justify-content: center;
   align-items: center;
   height: 9vh;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: fixed;
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 10px 20px rgba(151, 151, 151, 0.19),
+    0 6px 6px rgba(255, 223, 223, 0.23);
+  z-index: 10;
 }
 .logo {
   width: 50px;
@@ -77,14 +83,14 @@ button {
 section {
   background: #f3f4f3;
   width: 100%;
-  height: 91vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .container-firtsPage {
   width: 80%;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -278,6 +284,9 @@ section {
 .father-img-contactMe,
 .father-form-contactMe {
   width: 50%;
+}
+.father-img-contactMe {
+  height: 40vh;
 }
 .father-form-contactMe form {
   width: 79%;

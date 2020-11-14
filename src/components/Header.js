@@ -1,7 +1,7 @@
 import React from "react";
 import { isMobile } from "mobile-device-detect";
 import { motion } from "framer-motion";
-
+import { Link } from "react-router-dom";
 export const Header = () => {
   return (
     <>
@@ -15,10 +15,11 @@ export const Header = () => {
             </motion.div>
 
             <ul>
-              <li>Projects</li>
-              <li>Contact me</li>
-              <li>Skills</li>
-              <li>Footer</li>
+              <Link to="/">Home</Link>
+              <Link to="/projects">Projects</Link>
+              <Link to="/contact">Contact me</Link>
+              <Link to="/skills">Skills</Link>
+              <Link to="/">Blog</Link>
             </ul>
           </div>
           <div className="row-header2"></div>

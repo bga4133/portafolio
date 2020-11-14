@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { Header } from "./components/Header";
-import { FirtsContainer } from "./components/FirtsContainer";
 import { Skills } from "./components/Skills";
 import { Projects } from "./components/Projects";
-import { DescriptionTitle } from "./components/DescriptionTitle";
-import { Footer } from "./components/Footer";
 import { ContactMe } from "./components/ContactMe";
 import { Thanks } from "./components/Thanks";
 import { SkeletonLoader } from "./components/Skeleton";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
+import { HomePage } from "./components/HomePage";
 
 export const Portafolio = () => {
   const [loading, setLoading] = useState(true);
@@ -19,17 +19,19 @@ export const Portafolio = () => {
   return (
     <>
       {loading === false ? (
-        <div>
-          {/* header app */}
+        <Router>
+          <ScrollToTop />
           <Header />
-          <FirtsContainer />
-          <DescriptionTitle />
-          <Projects />
-          <ContactMe />
-          <Skills />
-          <Thanks />
-          <Footer />
-        </div>
+          <Switch>
+            <div>
+              <Route path="/" exact component={HomePage} />
+              <Route path="/projects" component={Projects} />
+              <Route path="/contact" component={ContactMe} />
+              <Route path="/skills" component={Skills} />
+              <Route path="/thanks" component={Thanks} />
+            </div>
+          </Switch>
+        </Router>
       ) : (
         <SkeletonLoader />
       )}

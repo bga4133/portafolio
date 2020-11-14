@@ -8,6 +8,7 @@ import { ReactComponent as Chatbot } from "../assets/img/chatbot.svg";
 import { ReactComponent as Scooter } from "../assets/img/scoter.svg";
 import { ReactComponent as Pwa } from "../assets/img/pwa.svg";
 import { ReactComponent as Mern } from "../assets/img/mern.svg";
+import { Link } from "react-router-dom";
 export const Projects = () => {
   const [information1, setInformation1] = useState([
     {
@@ -49,7 +50,11 @@ export const Projects = () => {
                 I contributed to the development of reserveahora.com using
                 technologies such as javascript vuejs es6
               </p>
-              <a href="#" className="button-viewProject flex">
+              <a
+                href="https://reserveahora.com/"
+                className="button-viewProject flex"
+                target="_blank"
+              >
                 View Projects
               </a>
             </div>
@@ -70,7 +75,11 @@ export const Projects = () => {
                 They are hooks made in react to fetch apis with axios and thus
                 be able to reuse a lot of code that´s cool
               </p>
-              <a href="#" className="button-viewProject flex">
+              <a
+                href="https://github.com/bga4133/custom-hooks"
+                className="button-viewProject flex"
+                target="_blank"
+              >
                 View Projects
               </a>
             </div>
@@ -91,7 +100,11 @@ export const Projects = () => {
                 it is a chatbot echo with nodejs web sockets it was used to
                 automatically answer a restaurant menu
               </p>
-              <a href="#" className="button-viewProject flex">
+              <a
+                href="https://github.com/bga4133/chatbot"
+                target="_blank"
+                className="button-viewProject flex"
+              >
                 View Projects
               </a>
             </div>
@@ -120,7 +133,11 @@ export const Projects = () => {
                 meep was a solution to an electric scooter app, it allowed to
                 know the state of the scooter, batery etc.
               </p>
-              <a href="#" className="button-viewProject flex">
+              <a
+                href="https://github.com/bga4133/meep"
+                target="_blank"
+                className="button-viewProject flex"
+              >
                 View Projects
               </a>
             </div>
@@ -141,7 +158,11 @@ export const Projects = () => {
                 It is a responsive application used by many hotels that allows
                 you to reserve rooms , hotels with gym etc.
               </p>
-              <a href="#" className="button-viewProject flex">
+              <a
+                href="https://github.com/bga4133/Hotel-Mobile-New-PWA"
+                target="_blank"
+                className="button-viewProject flex"
+              >
                 View Projects
               </a>
             </div>
